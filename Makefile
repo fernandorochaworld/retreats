@@ -12,6 +12,9 @@ endif
 test:
 	docker exec -it rnv_test_nestjs npm run test
 
+test-e2e:
+	docker exec -it rnv_test_nestjs npm run test:e2e
+
 exec:
 	docker exec -it rnv_test_nestjs sh
 
